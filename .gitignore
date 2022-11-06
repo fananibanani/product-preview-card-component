@@ -16,4 +16,6 @@
 .prettierignore
 
 # Ignore helper docs
-.design
+design/
+README-default.md
+style-guide.md

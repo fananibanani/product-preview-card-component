@@ -27,28 +27,45 @@ body {
   background-color: hsl(0deg, 0%, 100%);
   display: flex;
   overflow: hidden;
-  max-width: 375px;
   max-height: 100vh;
   margin: 15px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   border-radius: 10px;
 }
+@media screen and (max-width: 650px) {
+  .flex-container {
+    max-width: 375px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 651px) {
+  .flex-container {
+    max-width: 650px;
+    flex-direction: row;
+  }
+}
 
-.perfume-image {
-  width: 100%;
+@media screen and (max-width: 650px) {
+  .perfume-image {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 651px) {
+  .perfume-image {
+    content: url(./images/image-product-desktop.jpg);
+    width: 50%;
+  }
 }
 
 /* This contains all the textual content */
 .content {
-  width: 100%;
-  max-height: 60vh;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
   padding: 25px;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -96,13 +113,20 @@ body {
 
 .cart-button {
   background-color: hsl(158deg, 36%, 37%);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
   color: hsl(0deg, 0%, 100%);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   width: 100%;
   border: none;
   border-radius: 10px;
   padding: 15px;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 700;
+}
+.cart-button:hover {
+  background-color: hsl(158deg, 42%, 18%);
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

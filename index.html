@@ -14,34 +14,37 @@
   <main>
     <div class="flex-container">
       <img 
+        class="perfume-image"
         alt="On a white background, 
               a square glass bottle of a perfume with the text 'Gabrielle Chanel Paris' on it, 
               with yellowish liquid in the bottle, 
               surrounded by 2 branches of a green leafy plant" 
-        src="./images/image-product-desktop.jpg">
+        src="./images/image-product-mobile.jpg">
 
-      <h1 class="perfume-name">Gabrielle Essence Eau De Parfum</h1>
+      <div class="content">
+        <h1 class="perfume-name">Gabrielle Essence Eau De Parfum</h1>
 
-      <h2 aria-hidden="true">Perfume</h2>
-      <!--
-        h2 hidden from screen readers as this does not serve informational purpose, 
-          only aesthetically included in the design
+        <h2 class="perfume-subtitle" aria-hidden="true">Perfume</h2>
+        <!--
+          h2 hidden from screen readers as this does not serve informational purpose, 
+            only aesthetically included in the design
 
-        CODING NOTE: this h2 will need to come before the h1 element visually
-      -->
+          CODING NOTE: this h2 will need to come before the h1 element visually
+        -->
 
-      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-      Perfumer-Creator for the House of CHANEL.</p>
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
 
-      <div>
-        <span class="reduced-price">$149.99</span>
-        <span class="original-price">$169.99</span>
+        <div>
+          <span class="reduced-price">$149.99</span>
+          <span class="original-price">$169.99</span>
+        </div>
+
+        <button class="cart-button">
+          <img src="./images/icon-cart.svg" /> 
+          Add to cart
+        </button>
       </div>
-
-      <button class="cart-button">
-        <img src="./images/icon-cart.svg" /> 
-        Add to cart
-      </button>
     </div>
   </main>
 

@@ -1,29 +1,62 @@
 /* Fonts: Montserrat 500, 700; Fraunces 700 */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
 
+/* Colors */
 $very-dark-blue: hsl(212, 21%, 14%);
 $dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
 $dark-cyan: hsl(158, 36%, 37%);
 $cream: hsl(30, 38%, 92%);
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: $cream;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: $dark-grayish-blue;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .flex-container {
     background-color: $white;
     display: flex;
-    max-width: 600px;
-    margin: auto;
+    max-width: 375px;
+    max-height: 80vh;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.perfume-image {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    max-height: 60%;
+}
+
+/* Textual content */
 .perfume-name {
     font-family: 'Fraunces', serif;
     color: $very-dark-blue;
+}
+
+.perfume-subtitle {
+    text-transform: uppercase;
 }
 
 .reduced-price {

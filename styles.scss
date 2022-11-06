@@ -1,0 +1,37 @@
+/* Fonts: Montserrat 500, 700; Fraunces 700 */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+$very-dark-blue: hsl(212, 21%, 14%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+
+body {
+    background-color: $cream;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: $dark-grayish-blue;
+}
+
+.flex-container {
+    background-color: $white;
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+}
+
+.perfume-name {
+    font-family: 'Fraunces', serif;
+    color: $very-dark-blue;
+}
+
+.reduced-price {
+    font-family: 'Fraunces', serif;
+    color: $dark-cyan;
+}
+
+.cart-button {
+    background-color: $dark-cyan;
+    color: $white;
+}

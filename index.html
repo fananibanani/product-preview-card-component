@@ -1,13 +1,3 @@
-<!--
-  CODING NOTES:
-    - make button hover effect
-    - finetune spacing
-      - between titles
-      - inside the button
-      - above the button
-      - make non-mobile version
-      - update README
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,24 +27,23 @@
           <h1 class="perfume-name">Gabrielle Essence Eau De Parfum</h1>
 
           <h2 class="perfume-subtitle" aria-hidden="true">Perfume</h2>
+          <!--
+            h2 hidden from screen readers as this does not serve informational purpose, 
+              only aesthetically included in the design
+          -->
         </div>
-        <!--
-          h2 hidden from screen readers as this does not serve informational purpose, 
-            only aesthetically included in the design
 
-          CODING NOTE: this h2 will need to come before the h1 element visually
-        -->
 
         <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
         Perfumer-Creator for the House of CHANEL.</p>
 
-        <div class="prices">
+        <p class="prices">
           <span class="reduced-price">$149.99</span>
           <span class="original-price">$169.99</span>
-        </div>
+        </p>
 
         <button class="cart-button">
-          <img src="./images/icon-cart.svg" /> 
+          <img alt="" src="./images/icon-cart.svg" /> 
           Add to Cart
         </button>
       </div>
@@ -64,7 +53,7 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Fanni K</a>.
+      Coded by <a href="https://github.com/fananibanani" target="_blank">Fanni K</a>.
     </div>
   </footer>
 

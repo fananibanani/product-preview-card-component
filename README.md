@@ -59,4 +59,4 @@ This project brought up the topics of using SCSS and of accessibility, both of w
 
 ## Author
 
-- Frontend Mentor - [@fananibanani](https://www.frontendmentor.io/profile/fanananibanani)
+- Frontend Mentor - [@fananibanani](https://www.frontendmentor.io/profile/fananibanani)

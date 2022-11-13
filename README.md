@@ -15,8 +15,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -32,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-solution-using-scss-and-flexbox-nP-oxkGDr-](https://www.frontendmentor.io/solutions/product-preview-card-component-solution-using-scss-and-flexbox-nP-oxkGDr-)
 - Live Site URL: [https://fananibanani.github.io/product-preview-card-component/](https://fananibanani.github.io/product-preview-card-component/)
 
 ## My process

@@ -1,7 +1,6 @@
 /* Fonts: Montserrat 500, 700; Fraunces 700 */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
 
-/* Colors */
 $very-dark-blue: hsl(212, 21%, 14%);
 $dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
@@ -18,47 +17,44 @@ $cream: hsl(30, 38%, 92%);
 body {
     background-color: $cream;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: $dark-grayish-blue;
     line-height: 1.5rem;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
+    display: grid;
+    place-items: center;
 }
 
 .flex-container {
     background-color: $white;
     display: flex;
     overflow: hidden;
+    border-radius: 10px;
+    margin: 15px;
+
     @media screen and (max-width: 639px) {
         max-width: 345px;
         flex-direction: column;
     }
     @media screen and (min-width: 640px) {
-         max-width: 600px;
+         width: 600px;
          flex-direction: row;
     }
-    max-height: 100vh;
-    border-radius: 10px;
 }
 
 .perfume-image {
     @media screen and (max-width: 639px) {
         width: 100%;
+        max-width: 345px;
     }
     @media screen and (min-width: 640px) {
         content: url(./images/image-product-desktop.jpg);
-        width: 50%;
+        width: 300px;
     }
 }
 
-/* This contains all the textual content */
+/* .content contains all the textual content */
 .content {
     max-width: 100%;
     max-height: 100%;
@@ -77,16 +73,23 @@ body {
     }
 }
 
-/* This contains the 2 titles and switches their order for visual preference */
+/* .titles contains the h1 and h2 titles and reverses their order to match the design */
 .titles {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     flex-direction: column-reverse;
     gap: 0.8rem;
 }
 
-/* Textual content */
+.prices {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Textual content styles start here */
 .perfume-name {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
@@ -97,15 +100,13 @@ body {
 
 .perfume-subtitle {
     text-transform: uppercase;
-    font-weight: 500;
     font-size: 0.8rem;
+    font-weight: 500;
     letter-spacing: 4px;
 }
 
-.prices {
-    display: flex;
-    gap: 1rem;
-    margin: 0.5rem 0;
+.screen-reader-only {
+    font-size: 0;
 }
 
 .reduced-price {
@@ -119,6 +120,7 @@ body {
     font-size: 0.8rem;
     vertical-align: top;
 }
+/* Textual content styles end here */
 
 .cart-button {
     background-color: $dark-cyan;
@@ -139,8 +141,4 @@ body {
         background-color: $very-dark-cyan;
         cursor: pointer;
     }
-}
-
-.attribution > a, a:visited {
-    color: $very-dark-cyan;
 }

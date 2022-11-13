@@ -1,3 +1,10 @@
+<!--
+  ATTRIBUTION
+
+  Challenge by Frontend Mentor | https://www.frontendmentor.io?ref=challenge
+  Coded by Fanni K | https://github.com/fananibanani
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,27 +17,22 @@
 
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <main>
     <div class="flex-container">
-      <img 
-        class="perfume-image"
-        alt="On a white background, 
-              a square glass bottle of a perfume with the text 'Gabrielle Chanel Paris' on it, 
-              with yellowish liquid in the bottle, 
-              surrounded by 2 branches of a green leafy plant" 
-        src="./images/image-product-mobile.jpg">
+      <img class="perfume-image" alt="" src="./images/image-product-mobile.jpg">
 
       <div class="content">
 
         <div class="titles">
           <h1 class="perfume-name">Gabrielle Essence Eau De Parfum</h1>
-
-          <h2 class="perfume-subtitle" aria-hidden="true">Perfume</h2>
           <!--
             h2 hidden from screen readers as this does not serve informational purpose, 
-              only aesthetically included in the design
+              only aesthetically included in the design;
+            h1 and h2 are visually reversed to match the design
           -->
+          <h2 class="perfume-subtitle" aria-hidden="true">Perfume</h2>
         </div>
 
 
@@ -38,24 +40,22 @@
         Perfumer-Creator for the House of CHANEL.</p>
 
         <p class="prices">
-          <span class="reduced-price">$149.99</span>
+          <!-- Original price is first to make more logical sense for screen readers,
+                but it's visually reversed with the reduced price to match the design
+          -->
+          <span class="screen-reader-only">Original price:</span>
           <span class="original-price">$169.99</span>
+          <span class="screen-reader-only">Reduced price:</span>
+          <span class="reduced-price">$149.99</span>
         </p>
 
-        <button class="cart-button">
+        <button class="cart-button" type="button">
           <img alt="" src="./images/icon-cart.svg" /> 
           Add to Cart
         </button>
       </div>
     </div>
   </main>
-
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/fananibanani" target="_blank">Fanni K</a>.
-    </div>
-  </footer>
 
 </body>
 </html>
